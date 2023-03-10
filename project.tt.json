@@ -1,6 +1,10 @@
 {
   "miniprogramRoot": "./",
+<<<<<<< HEAD
   "projectname": "Moko-Tally",
+=======
+  "projectname": "moko-tally",
+>>>>>>> 6a85c57a7d9c37d1b445681f1a0e34c72d32615d
   "appid": "testAppId",
   "setting": {
     "es6": false,
