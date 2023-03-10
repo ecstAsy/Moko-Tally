@@ -1,19 +1,14 @@
 /*
  * @Author: ecstAsy
  * @Date: 2023-03-08 17:37:48
- * @LastEditTime: 2023-03-09 16:39:59
+ * @LastEditTime: 2023-03-10 14:17:48
  * @LastEditors: ecstAsy
  */
 
 import Taro from "@tarojs/taro";
 
-interface OptionsType {
-  url: string;
-  method: "GET" | "POST";
-  data?: any;
-}
 
-const Request = (options: OptionsType) => {
+const Request = (options) => {
   const { url, method, data } = options;
   console.log(url);
 
