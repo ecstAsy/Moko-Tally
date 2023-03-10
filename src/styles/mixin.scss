@@ -1,0 +1,72 @@
+/* theme-color
+-------------------------- */
+$theme-color:#5E8DFF !default;
+
+/* font-color
+-------------------------- */
+$font-color-regular: #303133 !default;
+$font-color-toast: #90939A !default;
+$font-color-danger:#FA5151 !default;
+
+// 宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// 高度，行高 相等
+@mixin hl($height) {
+  height: $height;
+  line-height: $height;
+}
+
+// 字体大小，颜色
+@mixin f-s-c($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+// 字体样式、字重
+@mixin f-w-r($weight:400) {
+  font-family: PingFangSC-Regular,
+    PingFang SC;
+  font-weight: $weight;
+}
+
+// 字体样式、字重
+@mixin f-w-m($weight:500) {
+  font-family: PingFangSC-Medium,
+    PingFang SC;
+  font-weight: $weight;
+}
+
+// 字体样式、字重
+@mixin f-w-s ($weight:600) {
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: $weight;
+}
+
+// 定位上下左右居中
+@mixin center ($top:50%) {
+  position: absolute;
+  top: $top;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 省略标记
+@mixin ellipse($line: 1) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+// flex 布局和 子元素 对其方式
+@mixin fj($type: space-between, $align:center) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $type;
+  align-items: $align;
+}

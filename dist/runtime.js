@@ -139,7 +139,7 @@
 /******/ 	/* webpack/runtime/load script */
 /******/ 	!function() {
 /******/ 		var inProgress = {};
-/******/ 		var dataWebpackPrefix = "moko-tally:";
+/******/ 		var dataWebpackPrefix = "Moko-Tally:";
 /******/ 		// loadScript function to load a script via script tag
 /******/ 		__webpack_require__.l = function(url, done, key, chunkId) {
 /******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
@@ -199,14 +199,15 @@
 /******/ 			"app": [
 /******/ 				"webpack/container/remote/@tarojs/plugin-platform-weapp/dist/runtime",
 /******/ 				"webpack/container/remote/@tarojs/plugin-framework-react/dist/runtime",
+/******/ 				"webpack/container/remote/@tarojs/taro",
 /******/ 				"webpack/container/remote/react-redux",
 /******/ 				"webpack/container/remote/dva-core",
+/******/ 				"webpack/container/remote/redux-logger",
 /******/ 				"webpack/container/remote/dva-loading",
 /******/ 				"webpack/container/remote/react-dom"
 /******/ 			],
 /******/ 			"common": [
 /******/ 				"webpack/container/remote/@tarojs/runtime",
-/******/ 				"webpack/container/remote/@tarojs/taro",
 /******/ 				"webpack/container/remote/react",
 /******/ 				"webpack/container/remote/react/jsx-runtime"
 /******/ 			]
@@ -222,6 +223,11 @@
 /******/ 				"./@tarojs/plugin-framework-react/dist/runtime",
 /******/ 				null
 /******/ 			],
+/******/ 			"webpack/container/remote/@tarojs/taro": [
+/******/ 				"default",
+/******/ 				"./@tarojs/taro",
+/******/ 				null
+/******/ 			],
 /******/ 			"webpack/container/remote/react-redux": [
 /******/ 				"default",
 /******/ 				"./react-redux",
@@ -230,6 +236,11 @@
 /******/ 			"webpack/container/remote/dva-core": [
 /******/ 				"default",
 /******/ 				"./dva-core",
+/******/ 				null
+/******/ 			],
+/******/ 			"webpack/container/remote/redux-logger": [
+/******/ 				"default",
+/******/ 				"./redux-logger",
 /******/ 				null
 /******/ 			],
 /******/ 			"webpack/container/remote/dva-loading": [
@@ -245,11 +256,6 @@
 /******/ 			"webpack/container/remote/@tarojs/runtime": [
 /******/ 				"default",
 /******/ 				"./@tarojs/runtime",
-/******/ 				null
-/******/ 			],
-/******/ 			"webpack/container/remote/@tarojs/taro": [
-/******/ 				"default",
-/******/ 				"./@tarojs/taro",
 /******/ 				null
 /******/ 			],
 /******/ 			"webpack/container/remote/react": [

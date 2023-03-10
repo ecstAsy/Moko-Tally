@@ -21,6 +21,9 @@ var moduleMap = {
 	"./@tarojs/taro": function() {
 		return Promise.all([__webpack_require__.e("vendors-node_modules_taro_weapp_prebundle_chunk-5K2QZOIU_js"), __webpack_require__.e("vendors-node_modules_taro_weapp_prebundle_chunk-VYWETQAV_js"), __webpack_require__.e("vendors-node_modules_taro_weapp_prebundle_tarojs_taro_js")]).then(function() { return function() { return (__webpack_require__(/*! ./node_modules/.taro/weapp/prebundle/@tarojs_taro.js */ "./node_modules/.taro/weapp/prebundle/@tarojs_taro.js")); }; });
 	},
+	"./redux-logger": function() {
+		return Promise.all([__webpack_require__.e("vendors-node_modules_taro_weapp_prebundle_chunk-5K2QZOIU_js"), __webpack_require__.e("vendors-node_modules_taro_weapp_prebundle_chunk-VYWETQAV_js"), __webpack_require__.e("vendors-node_modules_taro_weapp_prebundle_redux-logger_js")]).then(function() { return function() { return (__webpack_require__(/*! ./node_modules/.taro/weapp/prebundle/redux-logger.js */ "./node_modules/.taro/weapp/prebundle/redux-logger.js")); }; });
+	},
 	"./dva-loading": function() {
 		return Promise.all([__webpack_require__.e("vendors-node_modules_taro_weapp_prebundle_chunk-L5W4WYYH_js"), __webpack_require__.e("node_modules_taro_weapp_prebundle_dva-loading_js")]).then(function() { return function() { return (__webpack_require__(/*! ./node_modules/.taro/weapp/prebundle/dva-loading.js */ "./node_modules/.taro/weapp/prebundle/dva-loading.js")); }; });
 	},
@@ -79,6 +82,9 @@ var taroModuleMap = {
 	},
 	"./@tarojs/taro": function() {
 		return function() { return (__webpack_require__(/*! ./node_modules/.taro/weapp/prebundle/@tarojs_taro.js */ "./node_modules/.taro/weapp/prebundle/@tarojs_taro.js")); };
+	},
+	"./redux-logger": function() {
+		return function() { return (__webpack_require__(/*! ./node_modules/.taro/weapp/prebundle/redux-logger.js */ "./node_modules/.taro/weapp/prebundle/redux-logger.js")); };
 	},
 	"./dva-loading": function() {
 		return function() { return (__webpack_require__(/*! ./node_modules/.taro/weapp/prebundle/dva-loading.js */ "./node_modules/.taro/weapp/prebundle/dva-loading.js")); };

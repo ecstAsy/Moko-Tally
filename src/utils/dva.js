@@ -1,11 +1,10 @@
 /*
  * @Author: ecstAsy
  * @Date: 2023-03-10 14:00:01
- * @LastEditTime: 2023-03-10 14:00:04
+ * @LastEditTime: 2023-03-10 14:22:50
  * @LastEditors: ecstAsy
  */
 
-import Taro from "@tarojs/taro";
 import { create } from "dva-core";
 import { createLogger } from "redux-logger";
 import createLoading from "dva-loading";
@@ -14,7 +13,7 @@ let app, store, dispatch, registered;
 
 function createApp(options) {
   // redux日志
-  opt.onAction = [createLogger()];
+  options.onAction = [createLogger()];
 
   app = create(options);
 

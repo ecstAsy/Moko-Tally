@@ -41,6 +41,7 @@ specifiers:
   redux-logger: ^3.0.6
   redux-thunk: ^2.4.2
   stylelint: ^14.4.0
+  taro-ui: ^2.3.4
   webpack: 5.69.0
 
 dependencies:
@@ -69,6 +70,7 @@ dependencies:
   redux: 4.2.1
   redux-logger: 3.0.6
   redux-thunk: 2.4.2_redux@4.2.1
+  taro-ui: 2.3.4
 
 devDependencies:
   '@babel/core': 7.21.0
@@ -2642,6 +2644,14 @@ packages:
     resolution: {integrity: sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==}
     dev: true
 
+  /@types/react/16.14.35:
+    resolution: {integrity: sha512-NUEiwmSS1XXtmBcsm1NyRRPYjoZF2YTE89/5QiLt5mlGffYK9FQqOKuOLuXNrjPQV04oQgaZG+Yq02ZfHoFyyg==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.1
+    dev: false
+
   /@types/react/18.0.28:
     resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
     dependencies:
@@ -3816,6 +3826,10 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
 
+  /bind-decorator/1.0.11:
+    resolution: {integrity: sha512-yzkH0uog6Vv/vQ9+rhSKxecnqGUZHYncg7qS7voz3Q76+TAi1SGiOKk2mlOvusQnFz9Dc4BC/NMkeXu11YgjJg==}
+    dev: false
+
   /bl/1.2.3:
     resolution: {integrity: sha512-pvcNpa0UU69UT341rO6AYy4FVAIkUHuZXRIWbq+zHnsVcRzDDjIAhGuuYoi0d//cwIwtt4pkpKycWEfjdV+vww==}
     dependencies:
@@ -4814,6 +4828,10 @@ packages:
       whatwg-mimetype: 2.3.0
       whatwg-url: 8.7.0
     dev: true
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -11684,6 +11702,17 @@ packages:
       css-mediaquery: 0.1.2
       postcss-value-parser: 3.3.1
     dev: true
+
+  /taro-ui/2.3.4:
+    resolution: {integrity: sha512-qjAGO75bIvBGaOlpbnRKecTjmQIzJZjieFuz2UsfSJHnyGgOhlFviWWHPLQQGE2tFcjC0Zol0BDnO4r87JjdSw==}
+    dependencies:
+      '@types/react': 16.14.35
+      bind-decorator: 1.0.11
+      classnames: 2.3.2
+      dayjs: 1.11.7
+      lodash: 4.17.21
+      prop-types: 15.8.1
+    dev: false
 
   /terser-webpack-plugin/5.3.7_6v6kfamjh4qk2uu4ucniotzj5i:
     resolution: {integrity: sha512-AfKwIktyP7Cu50xNjXF/6Qb5lBNzYaWpU6YfoX3uZicTx0zTy0stDDCsvjDapKsSDvOeWo5MEq4TmdBy2cNoHw==}
