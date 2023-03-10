@@ -1,11 +1,12 @@
 /*
  * @Author: ecstAsy
  * @Date: 2023-03-10 14:03:11
- * @LastEditTime: 2023-03-10 14:03:14
+ * @LastEditTime: 2023-03-10 18:00:08
  * @LastEditors: ecstAsy
  */
 
 import Taro from "@tarojs/taro";
+import { UserLogin } from "@/http";
 
 const getSystemInfo = () => {
   let SystemInfo = Taro.getSystemInfoSync();
@@ -26,7 +27,10 @@ export default {
     userInfo: null,
   },
   effects: {
-
+    *login({ payload = {} }, { call }) {
+      const data = yield call(UserLogin, payload);
+      return data;
+    },
   },
 
   reducers: {

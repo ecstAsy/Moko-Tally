@@ -1,0 +1,102 @@
+@import "@/styles/index.scss";
+
+.page-login {
+  .weapp-info {
+    padding-top: 80px;
+    text-align: center;
+
+    &-logo {
+      @include wh(146px, 144px);
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    &-title {
+      @include hl(44px);
+      @include f-s-c(32px, #333);
+      @include f-w-m();
+    }
+
+  }
+
+  .login-way {
+    margin-top: 360px;
+
+    .login-button {
+      margin-bottom: 40px;
+    }
+  }
+
+  .login-info {
+    margin-top: 160px;
+
+    &-item {
+      @include wh(590px, 96px);
+      background: #FFFFFF;
+      border-radius: 50px;
+      border: 2px solid #D5D8E1;
+      margin: 0 auto;
+
+      &.info-mm {
+        margin: 40px auto 30px;
+      }
+
+      &-input {
+        @include wh(510px, 100%);
+        padding: 0 40px;
+        font-size: 28px;
+
+        // 单独写input样式
+        input {
+          @include wh(510px, 100%);
+          font-size: 28px;
+        }
+      }
+    }
+
+    .login-info-error {
+      @include hl(36px);
+      width: 510px;
+      margin: 0 auto 94px;
+
+      &-toast {
+        @include f-s-c(26px, $font-color-danger);
+        @include f-w-r();
+      }
+    }
+  }
+
+  .login-button {
+    @include hl(96px);
+    @include f-w-m();
+    width: 560px;
+    border-radius: 50px;
+    border: none;
+    outline: medium;
+
+    &.submit {
+      @include f-s-c(30px, #fff);
+      background: $theme-color;
+    }
+
+    &.shadow {
+      box-shadow: 0px 4px 16px 0px rgba(94, 141, 240, 0.5);
+    }
+
+    &.regular {
+      @include f-s-c(30px, $theme-color);
+      background: #E9EDFF;
+    }
+
+    &.back {
+      @include f-s-c(28px, $font-color-toast);
+      @include f-w-r();
+      background: transparent;
+    }
+
+    &::after {
+      border: none;
+      outline: medium;
+    }
+  }
+}
