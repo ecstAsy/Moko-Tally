@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "Moko-Tally",
+  "appid": "testAppId",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
