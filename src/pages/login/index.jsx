@@ -1,33 +1,46 @@
-import { useState, useEffect } from "react";
+import Taro from "@tarojs/taro";
+import { useState } from "react";
 import { connect } from "react-redux";
 import { MLogo } from "@/assets";
+import $message from "@/utils/tips";
 
 import { View, Text, Image, Form, Input, Button } from "@tarojs/components";
 import "./index.scss";
 
 const Login = ({ dispatch, common }) => {
-  const [loginWay, setLoginWay] = useState("wechat");
   const [errorMsg, setErrorMsg] = useState(false);
 
   const onSubmit = async (e) => {
     try {
+      await Promise.all([setErrorMsg(false), $message.loading("登录中...")]);
       const res = await dispatch({
         type: "common/login",
         payload: e.detail.value,
       });
-      console.log(res);
+      if (res.code) {
+        return Promise.all([
+          $message.loaded(),
+          $message.toast(res.message),
+          () => (res.code === 10001 ? setErrorMsg(true) : null),
+        ]);
+      }
+      return Promise.all([
+        $message.loaded(),
+        $message.toast("登录成功！"),
+        Taro.switchTab({
+          url: "/pages/home/index",
+        }),
+      ]);
     } catch (error) {
-      return false;
+      return $message.loaded();
     }
   };
-
-  const onLogin = async () => {};
 
   return (
     <View className="page-login">
       <View className="weapp-info">
         <Image className="weapp-info-logo" src={MLogo} />
-        <Text className="weapp-info-title">摩卡 e 记</Text>
+        <Text className="weapp-info-title">魔咔 e 记</Text>
       </View>
       <View className="login-info">
         <Form onSubmit={onSubmit}>

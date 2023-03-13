@@ -1,7 +1,7 @@
 /*
  * @Author: ecstAsy
  * @Date: 2023-03-10 14:00:01
- * @LastEditTime: 2023-03-10 14:22:50
+ * @LastEditTime: 2023-03-13 10:24:34
  * @LastEditors: ecstAsy
  */
 
@@ -13,7 +13,7 @@ let app, store, dispatch, registered;
 
 function createApp(options) {
   // redux日志
-  options.onAction = [createLogger()];
+  // options.onAction = [createLogger()];
 
   app = create(options);
 
