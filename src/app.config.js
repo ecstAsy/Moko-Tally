@@ -1,13 +1,15 @@
 /*
  * @Author: ecstAsy
  * @Date: 2023-03-10 13:54:29
- * @LastEditTime: 2023-03-13 10:34:31
+ * @LastEditTime: 2023-03-14 16:42:13
  * @LastEditors: ecstAsy
  */
 
 export default defineAppConfig({
   pages: [
     // 'pages/login/index',
+    'pages/detail/index',
+    'pages/create/index',
     'pages/home/index',
     'pages/mine/index',
   ],
@@ -33,7 +35,7 @@ export default defineAppConfig({
       },
     ],
     color: "#CAD1DC",
-    selectedColor: "#5E8DFF",
+    selectedColor: "#64c6ee",
     borderStyle: "white",
   }
 })

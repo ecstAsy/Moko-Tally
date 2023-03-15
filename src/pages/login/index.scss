@@ -13,7 +13,7 @@
 
     &-title {
       @include hl(44px);
-      @include f-s-c(32px, #333);
+      @include f-s-c(32px, $font-color-regular);
       @include f-w-m();
     }
 
@@ -34,7 +34,7 @@
       @include wh(590px, 96px);
       background: #FFFFFF;
       border-radius: 50px;
-      border: 2px solid #D5D8E1;
+      border: 2px solid $border-color;
       margin: 0 auto;
 
       &.info-mm {

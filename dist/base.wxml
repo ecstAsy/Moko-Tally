@@ -53,32 +53,12 @@
   </text>
 </template>
 
-<template name="tmpl_0_13">
-  <button size="{{xs.b(i.p18,'default')}}" type="{{i.p19}}" plain="{{xs.b(i.p12,!1)}}" disabled="{{i.p2}}" loading="{{xs.b(i.p9,!1)}}" form-type="{{i.p3}}" open-type="{{i.p11}}" hover-class="{{xs.b(i.p4,'button-hover')}}" hover-stop-propagation="{{xs.b(i.p7,!1)}}" hover-start-time="{{xs.b(i.p5,20)}}" hover-stay-time="{{xs.b(i.p6,70)}}" name="{{i.p10}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongpress="eh" lang="{{xs.b(i.p8,en)}}" session-from="{{i.p16}}" send-message-title="{{i.p15}}" send-message-path="{{i.p14}}" send-message-img="{{i.p13}}" app-parameter="{{i.p0}}" show-message-card="{{xs.b(i.p17,false)}}" business-id="{{i.p1}}" bindgetuserinfo="eh" bindcontact="eh" bindgetphonenumber="eh" bindchooseavatar="eh" binderror="eh" bindopensetting="eh" bindlaunchapp="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid||i.sid}}" data-sid="{{i.sid}}">
-    <block wx:for="{{i.cn}}" wx:key="sid">
-      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
-    </block>
-  </button>
-</template>
-
 <template name="tmpl_0_23">
   <form report-submit="{{xs.b(i.p1,!1)}}" bindsubmit="eh" bindreset="eh" name="{{i.p0}}" report-submit-timeout="{{xs.b(i.p2,0)}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid||i.sid}}" data-sid="{{i.sid}}">
     <block wx:for="{{i.cn}}" wx:key="sid">
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </form>
-</template>
-
-<template name="tmpl_0_26">
-  <template is="{{xs.c(i, 'tmpl_0_')}}" data="{{i:i}}" />
-</template>
-
-<template name="tmpl_0_26_focus">
-  <input value="{{i.p24}}" type="{{xs.b(i.p23,'')}}" password="{{xs.b(i.p11,!1)}}" placeholder="{{i.p12}}" placeholder-style="{{i.p14}}" placeholder-class="{{xs.b(i.p13,'input-placeholder')}}" disabled="{{i.p7}}" maxlength="{{xs.b(i.p9,140)}}" cursor-spacing="{{xs.b(i.p6,0)}}" focus="{{xs.b(i.focus,!1)}}" confirm-type="{{xs.b(i.p4,'done')}}" confirm-hold="{{xs.b(i.p3,!1)}}" cursor="{{xs.b(i.p5,i.value.length)}}" selection-start="{{xs.b(i.p22,-1)}}" selection-end="{{xs.b(i.p21,-1)}}" bindinput="eh" bindfocus="eh" bindblur="eh" bindconfirm="eh" name="{{i.p10}}" always-embed="{{xs.b(i.p1,false)}}" adjust-position="{{xs.b(i.p0,true)}}" hold-keyboard="{{xs.b(i.p8,false)}}" safe-password-cert-path="{{i.p15}}" safe-password-length="{{i.p17}}" safe-password-time-stamp="{{i.p20}}" safe-password-nonce="{{i.p18}}" safe-password-salt="{{i.p19}}" safe-password-custom-hash="{{i.p16}}" auto-fill="{{i.p2}}" bindkeyboardheightchange="eh" bindnicknamereview="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid||i.sid}}" data-sid="{{i.sid}}"></input>
-</template>
-
-<template name="tmpl_0_26_blur">
-  <input value="{{i.p24}}" type="{{xs.b(i.p23,'')}}" password="{{xs.b(i.p11,!1)}}" placeholder="{{i.p12}}" placeholder-style="{{i.p14}}" placeholder-class="{{xs.b(i.p13,'input-placeholder')}}" disabled="{{i.p7}}" maxlength="{{xs.b(i.p9,140)}}" cursor-spacing="{{xs.b(i.p6,0)}}" confirm-type="{{xs.b(i.p4,'done')}}" confirm-hold="{{xs.b(i.p3,!1)}}" cursor="{{xs.b(i.p5,i.value.length)}}" selection-start="{{xs.b(i.p22,-1)}}" selection-end="{{xs.b(i.p21,-1)}}" bindinput="eh" bindfocus="eh" bindblur="eh" bindconfirm="eh" name="{{i.p10}}" always-embed="{{xs.b(i.p1,false)}}" adjust-position="{{xs.b(i.p0,true)}}" hold-keyboard="{{xs.b(i.p8,false)}}" safe-password-cert-path="{{i.p15}}" safe-password-length="{{i.p17}}" safe-password-time-stamp="{{i.p20}}" safe-password-nonce="{{i.p18}}" safe-password-salt="{{i.p19}}" safe-password-custom-hash="{{i.p16}}" auto-fill="{{i.p2}}" bindkeyboardheightchange="eh" bindnicknamereview="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid||i.sid}}" data-sid="{{i.sid}}"></input>
 </template>
 
 <template name="tmpl_0_50">
@@ -103,6 +83,10 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </image>
+</template>
+
+<template name="tmpl_0_39">
+  <open-data type="{{i.p4}}" open-gid="{{i.p3}}" lang="{{xs.b(i.p2,'en')}}" default-text="{{i.p1}}" default-avatar="{{i.p0}}" binderror="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid||i.sid}}" data-sid="{{i.sid}}"></open-data>
 </template>
 
 <template name="tmpl_0_8">

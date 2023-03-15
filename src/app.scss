@@ -1,1 +1,5 @@
 @import "./styles/index.scss";
+
+.container {
+  @include wh(100vw, 100vh);
+}

@@ -20,7 +20,7 @@
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -199,16 +199,15 @@
 /******/ 			"app": [
 /******/ 				"webpack/container/remote/@tarojs/plugin-platform-weapp/dist/runtime",
 /******/ 				"webpack/container/remote/@tarojs/plugin-framework-react/dist/runtime",
+/******/ 				"webpack/container/remote/@tarojs/taro",
+/******/ 				"webpack/container/remote/react",
+/******/ 				"webpack/container/remote/react-redux",
 /******/ 				"webpack/container/remote/dva-core",
-/******/ 				"webpack/container/remote/redux-logger",
 /******/ 				"webpack/container/remote/dva-loading",
 /******/ 				"webpack/container/remote/react-dom"
 /******/ 			],
 /******/ 			"common": [
 /******/ 				"webpack/container/remote/@tarojs/runtime",
-/******/ 				"webpack/container/remote/@tarojs/taro",
-/******/ 				"webpack/container/remote/react",
-/******/ 				"webpack/container/remote/react-redux",
 /******/ 				"webpack/container/remote/react/jsx-runtime"
 /******/ 			]
 /******/ 		};
@@ -221,31 +220,6 @@
 /******/ 			"webpack/container/remote/@tarojs/plugin-framework-react/dist/runtime": [
 /******/ 				"default",
 /******/ 				"./@tarojs/plugin-framework-react/dist/runtime",
-/******/ 				null
-/******/ 			],
-/******/ 			"webpack/container/remote/dva-core": [
-/******/ 				"default",
-/******/ 				"./dva-core",
-/******/ 				null
-/******/ 			],
-/******/ 			"webpack/container/remote/redux-logger": [
-/******/ 				"default",
-/******/ 				"./redux-logger",
-/******/ 				null
-/******/ 			],
-/******/ 			"webpack/container/remote/dva-loading": [
-/******/ 				"default",
-/******/ 				"./dva-loading",
-/******/ 				null
-/******/ 			],
-/******/ 			"webpack/container/remote/react-dom": [
-/******/ 				"default",
-/******/ 				"./react-dom",
-/******/ 				null
-/******/ 			],
-/******/ 			"webpack/container/remote/@tarojs/runtime": [
-/******/ 				"default",
-/******/ 				"./@tarojs/runtime",
 /******/ 				null
 /******/ 			],
 /******/ 			"webpack/container/remote/@tarojs/taro": [
@@ -261,6 +235,26 @@
 /******/ 			"webpack/container/remote/react-redux": [
 /******/ 				"default",
 /******/ 				"./react-redux",
+/******/ 				null
+/******/ 			],
+/******/ 			"webpack/container/remote/dva-core": [
+/******/ 				"default",
+/******/ 				"./dva-core",
+/******/ 				null
+/******/ 			],
+/******/ 			"webpack/container/remote/dva-loading": [
+/******/ 				"default",
+/******/ 				"./dva-loading",
+/******/ 				null
+/******/ 			],
+/******/ 			"webpack/container/remote/react-dom": [
+/******/ 				"default",
+/******/ 				"./react-dom",
+/******/ 				null
+/******/ 			],
+/******/ 			"webpack/container/remote/@tarojs/runtime": [
+/******/ 				"default",
+/******/ 				"./@tarojs/runtime",
 /******/ 				null
 /******/ 			],
 /******/ 			"webpack/container/remote/react/jsx-runtime": [

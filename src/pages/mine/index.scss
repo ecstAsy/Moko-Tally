@@ -1,0 +1,21 @@
+@import "@/styles/index.scss";
+
+.page-mine {
+  .mine-info {
+    @include flex-column();
+    padding: 32px;
+
+    &-avatar {
+      display: block;
+      @include wh(100px, 100px);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    &-nickname {
+      @include f-w-m();
+      @include f-s-c(30px, $font-color-regular);
+      margin-top: 16px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "@/styles/index.scss";
+
+.daily-expense {
+  margin: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 16px 0px rgba(94, 141, 240, .25);
+  overflow: hidden;
+
+  &-header {
+    background: linear-gradient(to bottom right, #fff, $theme-color);
+    padding: 8px 16px;
+    @include flex-row(space-between);
+
+    &-left {
+      @include f-w-m();
+      @include f-s-c(28px, $font-color-toast);
+    }
+
+    &-right {
+      @include f-w-r();
+      @include f-s-c(24px, $font-color-toast);
+
+      .expense-sum {
+        @include f-s-c(30px, $font-color-regular);
+        margin-left: 12px;
+      }
+    }
+  }
+
+  &-body {
+    padding: 0px 16px;
+  }
+}

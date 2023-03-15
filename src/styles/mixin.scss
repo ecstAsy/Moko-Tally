@@ -1,12 +1,18 @@
 /* theme-color
 -------------------------- */
-$theme-color:#5E8DFF !default;
+$theme-color:#64c6ee !default;
 
 /* font-color
 -------------------------- */
 $font-color-regular: #303133 !default;
 $font-color-toast: #90939A !default;
+
+$font-color-primary: #007aff !default;
 $font-color-danger:#FA5151 !default;
+$font-color-success: #4cd964 !default;
+$font-color-warning: #f0ad4e !default;
+
+$border-color: #D5D8E1 !default;
 
 // 宽高
 @mixin wh($width, $height) {
@@ -64,9 +70,17 @@ $font-color-danger:#FA5151 !default;
 }
 
 // flex 布局和 子元素 对其方式
-@mixin fj($type: space-between, $align:center) {
+@mixin flex-row($type: flex-start, $align:center) {
   display: flex;
   flex-direction: row;
+  justify-content: $type;
+  align-items: $align;
+}
+
+// flex 布局和 子元素 对其方式
+@mixin flex-column($type: flex-start, $align:center) {
+  display: flex;
+  flex-direction: column;
   justify-content: $type;
   align-items: $align;
 }

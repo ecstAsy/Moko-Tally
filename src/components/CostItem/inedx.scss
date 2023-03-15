@@ -1,0 +1,23 @@
+@import "@/styles/index.scss";
+
+.cost-item {
+  @include flex-row(space-between);
+  padding: 8px 0;
+  border-bottom: 1px solid $border-color;
+
+  &-label {
+    @include f-s-c(28px, $font-color-regular);
+  }
+
+  &-value {
+    @include f-w-m();
+
+    .subtract {
+      @include f-s-c(28px, $font-color-success);
+    }
+
+    .add {
+      @include f-s-c(28px, $font-color-danger);
+    }
+  }
+}

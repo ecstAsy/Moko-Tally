@@ -1,0 +1,19 @@
+@import "@/styles/index.scss";
+
+.page-home {
+  padding: 32px;
+
+  .home-card {
+    height: 200px;
+    border-radius: 16px;
+    border: 1px solid $border-color;
+    margin-bottom: 32px;
+    padding: 16px;
+    background: linear-gradient(to bottom right, #fff, $theme-color);
+    box-shadow: 0px 4px 16px 0px rgba(94, 141, 240, 0.5);
+
+    &-name {
+      @include f-s-c(28px, $theme-color);
+    }
+  }
+}
